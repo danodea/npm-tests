@@ -1,19 +1,17 @@
 {
   "name": "npm-tests",
-  "version": "1.0.1",
-  "description": "Testing NPM!",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Screwing around with npm!",
+  "main": "test.js",
   "scripts": {
     "test": "node test.js"
   },
-  "author": "Dan!",
-  "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/danodea/npm-tests.git"
   },
+  "author": "Dan!",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/danodea/npm-tests/issues"
   },
