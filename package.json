@@ -4,8 +4,20 @@
   "description": "Testing NPM!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test.js"
   },
   "author": "Dan!",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "once": "^1.3.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danodea/npm-tests.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danodea/npm-tests/issues"
+  },
+  "homepage": "https://github.com/danodea/npm-tests"
 }
