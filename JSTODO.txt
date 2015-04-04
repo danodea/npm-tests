@@ -1,0 +1,1 @@
+Put the scroll position in a variable outside the loop so that it doesn't have to be recalculated 200 times

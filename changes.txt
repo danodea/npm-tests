@@ -1,0 +1,7 @@
+CSS print sheet media = print
+Remove unnecesary CSS
+Inline all CSS
+Async all analytics JS
+Host images locally
+Optimize and resize images
+Remove web font and use default sans-serif font
