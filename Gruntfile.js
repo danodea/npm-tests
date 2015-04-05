@@ -15,10 +15,10 @@ module.exports = function(grunt) {
 		cssmin: {  // Minify CSS files
 			target: {
 				files: [{
-					expand: true  //Enable dynamic expansion
-					cwd: 'npm-tests/css'  // Matches src files relative to this path
+					expand: true,  //Enable dynamic expansion
+					cwd: 'css',  // Matches src files relative to this path
 					src: ['*.css', '!*.min.css'],  // Match all .css files but NOT .min.css files 
-					dest: 'npm-tests/css',  // Destination folder, NOT RELATIVE to cwd
+					dest: 'css',  // Destination folder, NOT RELATIVE to cwd
 					ext: '.min.css' // change extension of css files to .min.css
 				}]
 			}
@@ -27,8 +27,8 @@ module.exports = function(grunt) {
 			target1: {  // A target.  Can add as many as you want with different options and shit
 				options: { // https://github.com/kangax/html-minifier#options-quick-reference
 					removeComments: true,
-					collapseWhitespace: true;
-					minifyCSS: true;
+					collapseWhitespace: true,
+					minifyCSS: true
 				},
 				files: {  // Dictionary of files
 					'index-min-test.html': 'index.html'  // 'destination: 'source'
