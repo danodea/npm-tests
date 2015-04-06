@@ -34,6 +34,20 @@ module.exports = function(grunt) {
 					'index-min-test.html': 'index.html'  // 'destination: 'source'
 				}
 			}
+		},
+		compress: {
+			css: {
+				options: {
+					mode: 'gzip'
+				},
+				files: [{
+					expand: true,
+					cwd: 'css/',
+					src: ['*.min.css'],
+					dest: 'css/',
+					ext: '.min.css.gz'
+				}]
+			}
 		}
 	});
 
@@ -41,9 +55,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-htmlmin');
+	grunt.loadNpmTasks('grunt-contrib-compress');
 
 	// Default task that is performed when you just type 'grunt'
-	// I think they are run in this order, and not the order in the config object
-	grunt.registerTask('default', ['uglify', 'cssmin', 'htmlmin']);
+	// They are run in this order, and not the order in the config object
+	// Presumably you could make other combined tasks using this same syntax
+	grunt.registerTask('default', ['uglify', 'cssmin', 'htmlmin', 'compress']);
 
 };
